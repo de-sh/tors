@@ -30,3 +30,21 @@ fn main() {
         Err(e) => println!("READ ERROR: {:?}", e),
     }
 }
+
+// TODO: Write Tests
+/*
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_torrents() {
+        let file_names = read_dir("./tests").unwrap();
+
+        for file_name in file_names {
+            let mut file = File::open(file_name).unwrap();
+            let mut buffer = Vec::new();
+
+            parser();
+        }
+    }
+}
+*/
